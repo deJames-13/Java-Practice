@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                [%yellow(%d{HH:mm:ss.SSS})] %boldBlue(THREAD) %boldCyan(%-34.-34thread) %red(%10.10X{jda.shard}) %n[%yellow(%d{HH:mm:ss.SSS})] %boldBlue(LOGGER) %green(%-15.-15logger{0}) %n[%yellow(%d{HH:mm:ss.SSS})] %blue(%-6level) %msg  %n
+                
+            </pattern>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

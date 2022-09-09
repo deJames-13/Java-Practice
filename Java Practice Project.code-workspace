@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "Practice Project/Project 1"
+    },
+    {
+      "path": "Practice Project/Project 2 GUI Templates"
+    },
+    {
+      "path": "Practice Project/myjavabot1"
+    }
+  ],
+  "settings": {
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": ["lib/**/*.jar"],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "maven.view": "hierarchical",
+    "java.dependency.packagePresentation": "hierarchical"
+  }
+}
