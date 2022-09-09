@@ -14,7 +14,7 @@ public class MyBot {
                 .setActivity(Activity.watching("CornHub"))
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .build();
-        builder.addEventListener(new MyListener());
+        builder.addEventListener(new MyListener(), new MyCommandManager());
 
     }
 

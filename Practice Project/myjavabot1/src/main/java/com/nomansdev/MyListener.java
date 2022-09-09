@@ -20,7 +20,7 @@ public class MyListener extends ListenerAdapter {
     @Override
     public void onReady(@Nonnull ReadyEvent r) {
         LOGGER.info("{} is ready! ", r.getJDA().getSelfUser().getAsTag());
-        LOGGER.info(r.getJDA().getGatewayIntents().toString());
+        // LOGGER.info(r.getJDA().getGatewayIntents().toString());
 
     }
 
