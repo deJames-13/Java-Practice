@@ -25,10 +25,10 @@ public class MyCommandManager extends ListenerAdapter {
     public void onSlashCommandInteraction(@Nonnull SlashCommandInteractionEvent e) {
         String command = e.getName();
         User user = e.getUser();
-        String msg = e.getOption("msg").getAsString();
         if (command.equals("quote")) {
+            String msg = e.getOption("msg").getAsString();
             String quote = String.format("%s said \"%s\"", user.getName(), msg);
-            e.getChannel().sendMessage(quote).queue();
+            e.reply(quote).queue();
             ;
         }
     }
